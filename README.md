@@ -1,7 +1,14 @@
-# ROS + VREP
+# Robot Operating System (ROS) +robot simulator (V-REP)
 
 <img src="picture/env.jpg">
-<img src="picutre/rqt_graph.jpg">
+
+* Build 2D grid map with laserscan data avia `rviz`
+* Control the mobile robot in the `vrep` simulation environment with keyboard
+* Image Recognition and localization
+* Visual Servoing (follow the yellow ball)
+* roslaunch ros nodes
+
+<img src="picture/rqt_graph.jpg">
 
 ## SETUP
 #### ROS install and catkin
@@ -64,4 +71,5 @@ $ roslaunch hector.launch
 ```
 
 
+<img src="picture/run.jpg">
 
