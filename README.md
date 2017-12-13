@@ -75,6 +75,6 @@ $ roslaunch hector.launch
 
 
 ### Credits
-Chien-Sheng (Jason) Wu & Zifan Wang
-This is the final project of the course `ELEC4010K: Machine Learning and Information Processing for Robotic Perception by Prof. LIU Ming` in Fall 2017 at HKUST
+* Chien-Sheng (Jason) Wu & Zifan Wang
+* This is the final project of the course `ELEC4010K: Machine Learning and Information Processing for Robotic Perception` by Prof. LIU Ming in Fall 2017 at HKUST
 
