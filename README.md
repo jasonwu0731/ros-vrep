@@ -40,7 +40,7 @@ $ mkdir ~/V-REP
 $ mv ~/V-REP_PRO_EDU_V3_4_0_Linux ~/V-REP
 ```
 #### Load RosInterface and Some Packages
-* Copy everything in this repo *except* `README.md env.ttt hector.launch picture/ ` to `~/catkin_ws/src/`
+* Copy everything in this repo **except** `README.md env.ttt hector.launch picture/ ` to `~/catkin_ws/src/`
 ```
 $ cd ~/catkin_ws/
 $ catkin_make
