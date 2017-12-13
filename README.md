@@ -1,6 +1,10 @@
 # ROS + VREP
 
-### ROS install and catkin
+<img src="picture/env.jpg">
+<img src="picutre/rqt_graph.jpg">
+
+## SETUP
+#### ROS install and catkin
 1. Install catkin: http://wiki.ros.org/catkin
 2. Install ROS: http://wiki.ros.org/ROS/Installation
 3. Configure and create catkin workspace
@@ -20,8 +24,7 @@ $ sudo apt install ros kinetic hector slam
 #install key teleop
 $ sudo apt install ros kinetic key teleop
 ```
-
-### Install V-REP
+#### Install V-REP
 1. Dowload V-REP: http://www.coppeliarobotics.com/downloads.html
 ```
 $ cp V-REP_PRO_EDU_V3_4_0_Linux.tar.gz ~
@@ -29,8 +32,7 @@ $ tar -zvxf ~/V-REP_PRO_EDU_V3_4_0_Linux.tar.gz
 $ mkdir ~/V-REP
 $ mv ~/V-REP_PRO_EDU_V3_4_0_Linux ~/V-REP
 ```
-
-### Load RosInterface and Some Packages
+#### Load RosInterface and Some Packages
 * Copy everything in this repo *except* `README.md env.ttt hector.launch picture/ ` to `~/catkin_ws/src/`
 ```
 $ cd ~/catkin_ws/
@@ -42,3 +44,24 @@ $ source ~/.bashrc
 $ cd catkin_ws/devel/lib
 $ cp libv_repExtRosInterface.so  ~/V-REP
 ```
+
+## RUN
+1. open one terminal and run `$ roscore`
+2. open another terminal and run `$ . ~/V-REP/vrep.sh`
+>  Please pay attention to these message and if you see 
+```
+Plugin ’RosInterface’: loading...
+Plugin ’RosInterface’: load succeeded.
+```
+3. open `env.ttt` in vrep's scene and press the start bottom
+4. control the robot by keyboard
+```
+$ rosrun key_teleop key_teleop.py
+```
+5. launch the ros nodes for face detection/recognition and automatic ball tracking
+```
+$ roslaunch hector.launch
+```
+
+
+
